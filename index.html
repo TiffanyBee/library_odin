@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="new-book-menu">
+        <div id="title">
+            <h3>Track new book</h3>
+            <i class="fa fa-times"></i>
+        </div>
+        <div id="form">
+                <input type="text" placeholder="Title" name="" id="">
+                <input type="text" placeholder="Author" name="" id="">
+                <input type="number" placeholder="Number of pages" inputmode="numeric">
+                <div class="switch">
+                    <div class="switch-option">
+                        <input type="radio" name="read-unread" class='switch-input' id="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="switch-option">
+                        <input type="radio" name="read-unread" id="unread" class='switch-input' checked>
+                        <label for="unread">Unread</label>
+                    </div>
+                </div>
+                <a id='submit-book' href="#">Submit</a>
+        </div>
+        
+    </div>
+    <header>
+        <h1>Track your books</h1>
+        <a href="#" id="openNewBookMenu">Add new book <i class="fa fa-plus"></i></a>
+    </header>
+    <div id="book-viewer">
+    </div>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</body>
+</html>
